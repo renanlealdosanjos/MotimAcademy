@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+    font-weight: 200;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+
+    width: 100vw;
+    height: 13.5vh;
+
+    background-color: rgb(18,18,18);
+    color:rgb(135,135,135);
+}
+
+.Caixa1Header{
+    display: flex;
+    align-items: center;
+}
+
+#LogoSuperior{
+    height: 4vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+a{
+    color:rgb(135,135,135);
+    text-decoration: none;
+}
+
+.MenuNav{
+    padding-left: 1.5vw;
+    padding-right: 1.2vw;
+}
+
+.MenuNav:hover{
+    color: rgb(231,121,91);    
+    transition-duration: 0.2s;
+}
+
+#SelecaoMenu{
+    color: rgb(231,121,91);
+}
+
+#MenuPerfil{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right:5vw;
+
+    width: 20vw;
+    height: 8vh;
+}
+
+.IconeNav{
+    height: 3vh;
+}
+
+.FundoIconeNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5vw;
+    width: 2.5vw;
+    margin-right: 0.5vw;
+}
+
+.FundoIconeNav:hover{
+    border-radius: 100%;
+    background-color: rgb(63,63,63);
+    transition-duration: 0.2s;
+}
+
+#IconePerfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(30,30,30);
+
+    width: 6vw;
+    height: 8vh;
+
+    border-radius: 30px;
+}
+
+#IconePerfil:hover{
+    background-color: black;
+    transition-duration: 0.2s;
+}
+
+#Perfil{
+    height: 6vh;
+    margin:0;
+    padding:0;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+#Seta{
+    height: 1vh;
+    padding: 0;
+    margin: 0;
+}
+
+Main{
+    display: flex;
+    align-items: center;
+    
+    background-image: url("../imgs/Banner.webp");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+    height: 88.5vh;
+    width: 100vw;
+
+    color: white;
+
+    padding-left: 3vw;
+}
+
+#MenuMain{
+    display: flex;
+    flex-direction: column;
+}
+
+#TituloMain{
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    margin-bottom: 2.5vh;
+}
+
+#DescricaoMain{
+    margin-bottom: 2.5vh;
+}
+
+#BotaoMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 8vh;
+    width: 19vw;
+    
+    background-color: white;
+    border-radius: 10px;
+
+    color: black;
+    font-weight: bold;
+    
+    margin-top:1vh;
+}
+
+#BotaoMain:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+#SecaoVitrines{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(18,18,18);
+    width: 100vw;
+}
+
+.TitulosVitrines{
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    padding-left:3vw;
+    padding-top:2vw;
+    padding-bottom: 2vw;
+    color: white;
+}
+
+.BotaoCurso{
+    position: relative;
+}
+
+.BotaoCurso:hover{
+    transform:translateY(-15px);
+    transition-duration: 0.2s;
+}
+
+#PrimeiroCurso{
+    margin-left: 3vw;
+}
+
+.Cursos{
+    width: 17.5vw;
+    margin-left: 1vw;
+    margin-bottom: 5vh;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.IconeCadeado{
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    left:2vw;
+    top: 1vw;
+}
+
+#PrimeiroCadeado{
+    left:4vw;
+}
+
+.Empresas{
+    width: 17.5vw;
+    margin-left: 1vw;
+    margin-bottom: 5vh;
+    border-radius: 5px;
+}
+
+.Empresas:hover{
+    transform:translateY(-15px);
+    transition-duration: 0.2s;
+}
+
+Footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+
+    border-top: 0.3px;
+    border-color: rgb(60,60,60);
+    border-top-style: solid;
+    background-color: rgb(18,18,18);
+}
+
+#Footer1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    width: 32vw;
+    height: 30%;
+    
+    color: rgb(193,193,193);
+    font-size: 0.85rem;
+
+    margin-left: 3vw;
+}
+
+#ImgAmor{
+    height: 2vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+#Footer2{
+    display: flex;
+    justify-content: space-between;
+
+    width: 25vw;
+
+    color:rgb(193,193,193);
+    font-size: 0.9rem;
+    text-decoration: underline;
+
+    margin-right: 5vw;
+}
