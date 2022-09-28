@@ -1,0 +1,374 @@
+*{
+    background-color: #121212;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    height: 12.2vh;
+    padding-left: 3.3vw;
+    border-width: 0px 0px 1px 0px;
+    border-color: grey;
+    border-style: solid;
+}
+
+#logoSuperior{
+    height: 4.3vh;
+}
+
+#navSuperior{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 16.5vw;
+    height: 100%;
+    margin-left: 3.4vw;
+    
+}
+
+.menuNav{
+    color:silver;
+    text-decoration: none;
+    font-weight:lighter;
+}
+
+#menuPerfil{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 14vw;
+    margin-left:54vw;
+}
+
+.FundoIconeNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:6vh;
+    width: 6vh;
+    border-radius: 100%;
+}
+
+.FundoIconeNav:hover{
+    background-color: #292929;
+    transition: 0.2s;
+}
+
+.IconeNav{
+    height: 2.5vh;
+}
+
+#iconePerfil{
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    width: 5.5vw;
+    border-radius: 50px;
+    height: 7.2vh;
+}
+
+#Perfil{
+    margin: 0.6vh;
+    border-radius: 100%;
+    height: 6vh;
+}
+
+#Seta{
+    height: 1vh;
+    align-self: center;
+    margin-right: 0.5vw;
+}
+
+main{
+    display: flex;
+}
+
+#player{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    padding-left: 13vw;
+    height: 85vh;
+    width: 70vw;
+}
+
+h1{
+    padding-top: 3vh;
+    width: 100%;
+    font-weight: lighter;
+}
+
+#raiz{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    width: 100%;
+}
+
+h4{
+    width: auto;
+    color: grey;
+    font-weight: lighter;
+}
+
+h4:hover{
+    color:rgb(231,121,91);
+    transition: 0.5s;
+}
+
+#setaCurta{
+    height: 3vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+#playerVideo{
+    height: 20vh;
+}
+
+#listaAulas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    color: silver;
+    font-size: 0.9rem;
+    
+    width: 30vw;
+    height: 20vh;
+
+    margin-top: 7vh;
+    padding-left: 2vw;
+}
+
+a:hover{
+    color: rgb(231,121,91);
+    transition: 0.3s;
+}
+
+#aulaSelecionada{
+    color: rgb(231,121,91);
+}
+
+#controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-left: 13vw;
+
+    color: grey;
+    
+    width: 54vw;
+    height: 15vh;
+
+    border:0px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #292929;
+}
+
+#avaliar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 8vw;
+}
+
+#botaoLike{
+    height: 7vh;
+    background-color: #292929;
+    border-radius: 100%;
+    margin:0;
+    padding: 1vh;
+}
+
+#botaoDislike{
+    height: 7vh;
+    background-color: #292929;
+    border-radius: 100%;
+    margin:0;
+    padding: 1vh;
+}
+
+#botaoLike:hover{
+    background-color: silver;
+    transition: 1s;
+}
+
+#botaoDislike:hover{
+    background-color: silver;
+    transition: 1s;
+}
+
+#textoProximo{
+    display: flex;
+    align-items: center;
+    padding: 1.5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    border-radius: 30px;
+    background-color: #292929;
+    color: white;
+}
+
+#textoProximo:hover{
+    background-color: silver;
+    transition: 1s;
+}
+
+#setaProximo{
+    padding: 0;
+    margin-left: 1vw;
+    height: 3vh;
+    background-color: rgba(231,121,91,0%);
+}
+
+
+#sectionComentarios{
+    margin-left: 13vw;
+    color: grey;
+}
+
+#tituloComentarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:54vw;
+    height: 10vh;
+
+    color:white;
+    font-weight: 300;
+    font-size: 1rem;
+    
+    border: 0;
+    border-bottom: 2px;
+    border-color: rgb(231,121,91);
+    border-style: solid;
+}
+
+#campoComentario{
+    width: 47vw;
+    background-color: #292929;
+    height: 7vh;
+    margin-top:5vh;
+    margin-bottom: 3vw;
+
+    border-radius: 30px;
+    outline: grey;
+
+    color: silver;
+    font-size: 1rem;
+    padding:1vw;
+}
+
+#botaoEnviar{
+    height: 7vh;
+    width: 7vw;
+
+    border-radius: 30px;
+    background-color: rgb(231,121,91);
+    color: white;
+
+    font-size: 1.1rem;
+}
+
+#caixaComentario{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 7vh;
+    width: 30vw;
+    margin-bottom: 15vh;
+}
+
+#fotoComentario{
+    height: 7vh;
+}
+
+#comentarios{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #404040;
+    width: auto;
+    margin-left: 0.5vw;
+    padding:2.5vh;
+    border-radius: 10px;
+}
+
+#nomeComentario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    width: auto;
+    color: white;
+    background-color: #404040;
+}
+
+#textoComentario{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding:0;
+    color:silver;
+    background-color: #404040;
+}
+
+#responder{
+    font-size: 0.9rem;
+    color:silver;
+
+    padding:1.5vh;
+    margin-left: 3.5vw;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #121212;
+    color: silver;
+    font-size: 0.85rem;
+    padding-left: 3.5vw;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100vw;
+
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.2px 0px 0px 0px;
+}
+
+#footer1{
+    width: 29vw;
+}
+
+#ImgAmor{
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+    height: 2vh;
+}
+
+#footer2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30vw;
+}
+
+#menuInferior{
+    color: silver;
+}

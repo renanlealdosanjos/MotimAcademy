@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    height: 12.2vh;
+    background-color: #121212;
+    padding-left: 3.3vw;
+}
+
+#logoSuperior{
+    height: 4.3vh;
+}
+
+#navSuperior{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 16.5vw;
+    height: 100%;
+    margin-left: 3.4vw;
+    
+}
+
+.menuNav{
+    color:silver;
+    text-decoration: none;
+    font-weight:lighter;
+}
+
+#menuPerfil{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 14vw;
+    margin-left:54vw;
+}
+
+.FundoIconeNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:6vh;
+    width: 6vh;
+    border-radius: 100%;
+}
+
+.FundoIconeNav:hover{
+    background-color: #292929;
+    transition: 0.2s;
+}
+
+.IconeNav{
+    height: 2.5vh;
+}
+
+#iconePerfil{
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    width: 5.5vw;
+    border-radius: 50px;
+    height: 7.2vh;
+}
+
+#Perfil{
+    margin: 0.6vh;
+    border-radius: 100%;
+    height: 6vh;
+}
+
+#Seta{
+    height: 1vh;
+    align-self: center;
+    margin-right: 0.5vw;
+}
+
+#menuMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3vw;
+
+    color: white;
+
+    height: 75vh;
+    width: 100vw;
+    background-image: url('../imgs/Banner.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#TituloMain{
+    font-size: 1.7rem;
+    text-shadow: 1px 0px 1px black;
+    margin-bottom: 3vh;
+}
+
+#DescricaoMain{
+    font-weight: lighter;
+    text-shadow: 1px 1px black;
+    margin-bottom: 3vh;
+}
+
+#BotaoMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05rem;
+
+    border-radius: 5px;
+
+    height: 7vh;
+    width: 19vw;
+}
+
+#BotaoMain:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #121212;
+    width: 100vw;
+    padding-left: 3.5vw;
+}
+
+.TitulosVitrines{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    height: 10vh;
+    width: 100vw;
+    margin-top: 5vh;
+    
+}
+
+.BotaoCurso{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 1vw;
+}
+
+.Cursos{
+    width: 18vw;
+    border-radius: 5px;
+}
+
+.BotaoCurso:hover{
+    animation: movimento 0.5s;
+}
+
+@keyframes movimento{
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.IconeCadeado{
+    position: absolute;
+    height: 6vh;
+    margin: 10px;
+}
+
+.Empresas{
+    width: 18vw;
+    border-radius: 5px;
+    margin-right: 1vw;
+    margin-bottom: 10vh;
+}
+
+.Empresas:hover{
+    animation: movimento 0.5s;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #121212;
+    color: silver;
+    font-size: 0.85rem;
+    padding-left: 3.5vw;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100vw;
+
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.2px 0px 0px 0px;
+}
+
+#footer1{
+    width: 29vw;
+}
+
+#ImgAmor{
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+    height: 2vh;
+}
+
+#footer2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30vw;
+}
+
+#menuInferior{
+    color: silver;
+}

@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Background{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:flex-end;
+
+    background-image: url("../imgs/LoginBackground.png");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50vw;
+
+    padding-bottom: 5vh;
+
+    color: white;
+
+    font-size: 0.9rem;
+    padding-bottom: 7vh;
+}
+
+#ImgAmor{
+    width: 1.2vw;
+    height: fit-content;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    align-content: center;
+}
+
+#Rodape{
+    text-align: center;
+    width: 100%;
+    padding-top:0.5vh;
+}
+
+.Login{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(30,30,30);
+    color: white;
+
+    width: 50vw;
+}
+
+#Logo{
+    height: 5.5vh;
+    width: fit-content;
+
+    margin-top: 10vh;
+}
+
+#BotaoSuperior{
+    display: flex;
+    margin-top:5vh;
+    margin-bottom:2.5vh;
+
+    width: 65%;
+
+    border-color: rgb(56,57,59);
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+
+.TextoForm{
+    text-align: center;
+
+    color: rgb(226,226,226);
+    font-size: 1.05rem;
+    text-decoration: none;
+
+    width: 50%;
+
+    padding-bottom: 4vh;
+}
+
+#TextoAcessar{
+    color: rgb(231,121,91);
+    border-color: rgb(231,121,91);
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+.TextoForm:hover{
+    color: rgb(231,121,91);
+    border-color: rgb(231,121,91);
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+.TextoForm:focus{
+    color: rgb(231,121,91);
+    border-color: rgb(231,121,91);
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+.LabelForm{
+    color:rgb(226,226,226);
+    font-size: 0.9rem;
+
+    width: 65%;
+
+    padding-top: 4vh;
+    padding-bottom: 0.5vh;
+}
+
+.CampoForm{
+    width: 65%;
+    height: 7vh;
+
+    color: rgb(226,226,226);
+
+    background-color: rgb(18,18,18);
+    border-radius: 5px;
+    border-style: none;
+
+    margin-top: 1vh;
+    padding-left: 1vw;
+}
+
+.CampoForm:focus{
+    border-color: rgb(231,121,91);
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+#CampoTelefone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 65%;
+
+    margin-top:1vh;
+    margin-bottom: 4vh;
+}
+
+#Pais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 6.5vh;
+    width: 6vw;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    background-color: rgb(56,57,59);
+    color: rgb(226,226,226);
+    font-size: 0.8rem;
+}
+
+#Bandeira{
+    height: 2vh;
+    padding-right: 0.4vw;
+}
+
+#Seta{
+    height: 0.5vh;
+    padding-left: 0.4vw;
+}
+
+#Telefone{
+    width: 100%;
+    height: 6.5vh;
+
+    color: rgb(226,226,226);
+
+    background-color: rgb(18,18,18);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-style: none;
+
+    padding-left: 1vw;
+}
+
+#Telefone:focus{
+    border-color: rgb(231,121,91);
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+#BotaoCriar{
+    background-color: rgb(231,121,91);
+    color: white;
+    border-radius: 50px;
+    border-width: 0px;
+
+    font-size: 1.1rem;
+
+    width: 12vw;
+    height: 7vh;
+
+    margin-bottom:4vh;
+}
+
+#BotaoCriar:hover{
+    background-color: white;
+    color: rgb(231,121,91);
+}
