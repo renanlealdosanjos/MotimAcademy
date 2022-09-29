@@ -37,17 +37,17 @@
                     <h4 id="raizHome">Início</h4>
                 </a>
                 <img src="./imgs/Seta Cinza Curta.png" id="setaCurta">
-                <a href="./aulas.html">
-                    <h4>Primeiros Passos</h4>
+                <a href="./aula3.html">
+                    <h4>Função Procv</h4>
                 </a>
             </div>
-            <iframe frameborder="0" scrolling="0" allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture" class="video-iframe " allowfullscreen="1" id="playerVideo" src="https://player.vimeo.com/video/707751220?" data-ready="true" style="width: 825px; height: 464.062px;"></iframe>
+            <iframe frameborder="0" scrolling="0" allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture" class="video-iframe " allowfullscreen="1" id="playerVideo" src="https://player.vimeo.com/video/721065802?" data-ready="true" style="width: 825px; height: 464.062px;"></iframe>
         </div>
         <div id="listaAulas">
-            <a id="aulaSelecionada">1. Primeiros Passos</a>
-            <a>2. Função Somase e Cont.se</a>
-            <a>3. Função Procv</a>
-            <a>4. Tabela Dinâmica</a>
+            <a href="./aula1.html">✔️ 1. Primeiros Passos</a>
+            <a href="./aula2.html">✔️ 2. Função Somase e Cont.se</a>
+            <a href="#" id="aulaSelecionada">✔️ 3. Função Procv</a>
+            <a href="./aula4.html">4. Tabela Dinâmica</a>
         </div>
     </main>
     <section>
@@ -60,8 +60,11 @@
                     <img id="botaoDislike" src="./imgs/Dislike.png">
                 </div>
             </div>
-            <div id="botaoProximo">
-                <a id="textoProximo">
+            <div id="botaoNavegar">
+                <a id="textoProximo" href="./aula2.html">
+                    <img src="./imgs/Seta Esquerda.svg" id="setaAnterior"> Anterior 
+                </a>
+                <a id="textoProximo" href="./aula4.html">
                     Próximo <img src="./imgs/Seta Direita.svg" id="setaProximo">
                 </a>
             </div>
@@ -72,12 +75,20 @@
         <input type="text" name="comentario" id="campoComentario">
         <input type="button" value="Enviar" id="botaoEnviar">
         <div id="caixaComentario">
+            <img src="./imgs/Perfil-LauraC.jpg" id="fotoComentario">
+            <div id="comentarios">
+                <h4 id="nomeComentario">Laura Campos:</h4>
+                <p id="textoComentario">&nbsp Me falaram que a fórmula ÍNDICE é melhor que o PROCV. Procede?</p>
+            </div>
+            <a id="responder" href="#">Responder • há 5 dias</a>
+        </div>
+        <div id="caixaComentario">
             <img src="./imgs/Perfil.png" id="fotoComentario">
             <div id="comentarios">
-                <h4 id="nomeComentario">Marina Macedo:</h4>
-                <p id="textoComentario">&nbsp material muito bom!</p>
+                <h4 id="nomeComentario">Matheus Sales:</h4>
+                <p id="textoComentario">&nbsp Se eu soubesse disso na minha época de estágio tinha sido efetivado :(</p>
             </div>
-            <p id="responder">Responder • há 5 dias</pi>
+            <a id="responder" href="#">Responder • há 5 dias</a>
         </div>
     </section>
     <footer>
