@@ -151,6 +151,10 @@ a{
     padding-left: 2vw;
 }
 
+.listaDeAulas{
+    color:silver;
+}
+
 a:hover{
     color: rgb(231,121,91);
     transition: 0.3s;
