@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Motim Educação LTDA</title>
-    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/recuperar.css" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -18,31 +18,19 @@
         </div>
         <div class="Login">
             <img id="Logo" src="./imgs/Logo com texto.webp">
-            
-            <div id="BotaoSuperior">
-                <span class="TextoForm" id="TextoAcessar">Acessar sua conta</span>
-                <a href="LoginCriar.html" class="TextoForm">Crie sua conta</a>
-            </div>
+
+            <h2 id="tituloRecuperar">Esqueceu a sua senha?</h2>
+            <p id="textoRecuperar">Preencha abaixo seu endereço de e-mail para receber as instruções necessárias e criar uma nova senha</p>
 
             <label class="LabelForm" for="email">E-mail</label>
             <input class="CampoForm" id="campoEmail" type="email" name="email">
-            <label class="LabelForm" for="senha">Senha</label>
-            <input class="CampoForm" id="campoSenha" type="password" name="senha">
-
-            <div id="Checkbox">
-                <input id="CaixaCheckbox" type="checkbox" name="remember">
-                <label id="labelCheckbox">Lembrar de mim</label>
-            </div>
                 
-            <a onclick="acessar()">
-                <button id="BotaoEntrar" >Entrar</button>
-            </a>
+            <button id="botaoRecuperar" onclick="recuperar()">Recuperar minha senha</button>
 
-            <a id="BotaoEsqueceu" href="./recuperar.html">Esqueceu sua senha?</a>
+            <a href="./index.html">Fazer login</a>
 
         </div>
     </main>
-
     <script src="./login.js"></script>
 </body>
 </html>

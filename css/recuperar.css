@@ -65,51 +65,19 @@ main{
     width: fit-content;
 
     margin-top: 10vh;
+    margin-bottom: 12vh;
 }
 
-#BotaoSuperior{
-    display: flex;
-    margin-top:5vh;
-    margin-bottom:2.5vh;
-
+#tituloRecuperar{
     width: 65%;
-
-    border-color: rgb(56,57,59);
-    border-width: 1px;
-    border-bottom-style: solid;
+    color: silver;
 }
 
-.TextoForm{
-    text-align: center;
-
-    color: rgb(226,226,226);
-    font-size: 1.05rem;
-    text-decoration: none;
-
-    width: 50%;
-
-    padding-bottom: 4vh;
-}
-
-#TextoAcessar{
-    color: rgb(231,121,91);
-    border-color: rgb(231,121,91);
-    border-bottom-style: solid;
-    border-width: 2px;
-}
-
-.TextoForm:hover{
-    color: rgb(231,121,91);
-    border-color: rgb(231,121,91);
-    border-bottom-style: solid;
-    border-width: 2px;
-}
-
-.TextoForm:focus{
-    color: rgb(231,121,91);
-    border-color: rgb(231,121,91);
-    border-bottom-style: solid;
-    border-width: 2px;
+#textoRecuperar{
+    width: 65%;
+    color: silver;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .LabelForm{
@@ -118,13 +86,13 @@ main{
 
     width: 65%;
 
-    padding-top: 3vh;
+    padding-top: 4vh;
     padding-bottom: 0.5vh;
 }
 
 .CampoForm{
     width: 65%;
-    height: 6.5vh;
+    height: 7vh;
 
     color: rgb(226,226,226);
 
@@ -134,8 +102,7 @@ main{
 
     margin-top: 1vh;
     padding-left: 1vw;
-
-    box-sizing: border-box;
+    margin-bottom: 4vh;
 }
 
 .CampoForm:focus{
@@ -145,26 +112,7 @@ main{
     outline: none;
 }
 
-#Checkbox{
-    display: flex;
-    align-items: center;
-    margin-top: 4vh;
-    margin-bottom:4vh;
-}
-
-#CaixaCheckbox{
-    margin-right: 0.5vw;
-
-    width: 1.2vw;
-    height: 1.2vw;
-}
-
-#labelCheckbox{
-    color: rgb(226,226,226);
-    font-size: 0.9rem;
-}
-
-#BotaoEntrar{
+#botaoRecuperar{
     background-color: rgb(231,121,91);
     color: white;
     border-radius: 50px;
@@ -172,23 +120,26 @@ main{
 
     font-size: 1.1rem;
 
-    width: 8vw;
+    width: 15vw;
     height: 7vh;
 
     margin-bottom:4vh;
 }
 
-#BotaoEntrar:hover{
+#botaoRecuperar:hover{
     background-color: white;
     color: rgb(231,121,91);
+    transition: 0.6s;
 }
 
-#BotaoEsqueceu{
-    color: rgb(226,226,226);
+a{
+    color: white;
     text-decoration: none;
 }
 
-#BotaoEsqueceu:hover{
+a:hover{
     color: rgb(231,121,91);
     text-decoration: underline;
+
+    transition: 0.6s;
 }

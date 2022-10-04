@@ -25,12 +25,11 @@
             </div>
 
             <label class="LabelForm" for="nome">Nome Completo</label>
-            <input class="CampoForm" type="text" name="nome">
+            <input class="CampoForm" id="criarNome" type="text" name="nome">
             <label class="LabelForm" for="email">E-mail</label>
-            <input class="CampoForm" type="email" name="email">
-
+            <input class="CampoForm" id="criarEmail" type="email" name="email">
+            
             <label class="LabelForm" for="telefone">Celular</label>
-
             <div id="CampoTelefone">
                 <div id="Pais">
                     <img id="Bandeira" src="./imgs/Bandeira.webp">
@@ -40,11 +39,12 @@
                 <input id="Telefone" type="number" name="telefone">
             </div>
                 
-            <a href="./index.html">
+            <a onclick="criarConta()">
                 <button id="BotaoCriar">Criar minha conta</button>
             </a>
 
         </div>
     </main>
+    <script src="./login.js"></script>
 </body>
 </html>
