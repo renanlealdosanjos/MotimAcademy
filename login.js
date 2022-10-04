@@ -51,6 +51,7 @@ function recuperar(){
     } else {
         if (campoEmail.value.indexOf("@") > -1) {
             alert("Email de recuperação enviado!")
+            window.location.href = "./index.html"
         } else {
             alert("Preencha o campo com um email válido.")
         }
