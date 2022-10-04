@@ -28,7 +28,7 @@
                 <img id="Seta" src="./imgs/Seta.png">
             </a>
         </nav>
-</header>
+    </header>
     <main>
         <div id="player">
             <h1>Primeiros Passos</h1>
@@ -69,15 +69,16 @@
     </section>
     <section id="sectionComentarios">
         <h3 id="tituloComentarios">Comentários</h3>
-        <input type="text" name="comentario" id="campoComentario">
-        <input type="button" value="Enviar" id="botaoEnviar">
-        <div id="caixaComentario">
-            <img src="./imgs/Perfil.png" id="fotoComentario">
-            <div id="comentarios">
+        <input type="text" name="comentario" class="campoComentario">
+        <button class="botaoEnviar" onclick="comentar()">Enviar</button>
+
+        <div class="caixaComentario">
+            <img src="./imgs/Perfil.png" class="fotoComentario">
+            <div class="comentarios">
                 <h4 id="nomeComentario">Marina Macedo:</h4>
                 <p id="textoComentario">&nbsp material muito bom!</p>
             </div>
-            <a id="responder" href="#">Responder • há 5 dias</a>
+            <button class="responder" onclick="responder()">Responder • há 5 dias</button>
         </div>
     </section>
     <footer>
@@ -92,5 +93,6 @@
             <a id="menuInferior" href="https://membros.motim.me/area/eu/suporte">Suporte</a>
         </div>
     </footer>
+    <script src="./aulas.js"></script>
 </body>
 </html>
