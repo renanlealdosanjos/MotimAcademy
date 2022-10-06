@@ -233,6 +233,33 @@ footer{
     color: silver;
 }
 
+.fundoBackground{
+    background-Color: rgba(29,29,29,0.9);
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    position: fixed;
+    bottom: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campoBusca{
+    z-index: 6;
+    height: 12vh;
+    width: 25vw;
+    background-Color: black;
+    border-radius: 60px;
+
+    color: white;
+    padding-left: 3vw;
+    font-size: 1.2rem;
+    outline: none;
+}
+
 .iconeBusca{
     height : 9vh;
     width : 9vh;
@@ -249,4 +276,35 @@ footer{
 
 .iconeBusca:hover{
     background-color: white;
+    transition: 0.3s;
+}
+
+.iconeFechar{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(231,121,91);
+    color: white;
+
+    border-radius: 100%;
+
+    z-Index : 11;
+
+    margin-left: 27vw;
+    margin-bottom: 12vh;
+    padding: 2vh;
+
+    height: 3vh;
+    width: 3vh;
+
+    font-size: 0.9rem;
+}
+
+.iconeFechar:hover{
+    background-color: white;
+    color: rgb(231,121,91);
+
+    transition: 0.3s;
 }

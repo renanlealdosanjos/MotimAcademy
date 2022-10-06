@@ -1,42 +1,30 @@
 function buscar() {
 
+
+    // Cria o fundo preto com transparência que cobre a tela
+
     let fundoBackground = document.createElement("div")
-    let header = document.querySelector("main")
+    let main = document.querySelector("main")
 
-    header.style.zIndex = "0"
+    main.style.zIndex = "0"
 
-    fundoBackground.style.backgroundColor = "rgba(29,29,29,0.9)"
-    fundoBackground.style.height = "100vh"
-    fundoBackground.style.width = '100vw'
-    fundoBackground.style.zIndex = "3"
-    fundoBackground.style.position = "fixed"
-    fundoBackground.style.bottom = "0px"
+    fundoBackground.classList.add("fundoBackground")
 
-    fundoBackground.style.display="flex"
-    fundoBackground.style.justifyContent="center"
-    fundoBackground.style.alignItems="center"
+    main.appendChild(fundoBackground)
 
-    header.appendChild(fundoBackground)
 
+    // Cria a barra de busca
 
     let campoBusca = document.createElement("input")
 
-    campoBusca.style.zIndex="6"
-    campoBusca.style.height="12vh"
-    campoBusca.style.width="25vw"
-    campoBusca.style.backgroundColor="black"
-    campoBusca.style.borderRadius = "60px"
-
     campoBusca.placeholder = "Buscar"
 
-    campoBusca.style.color = "white"
-    campoBusca.style.paddingLeft = "3vw"
-    campoBusca.style.fontSize = "1.2rem"
-    campoBusca.style.outline = "none"
+    campoBusca.classList.add("campoBusca")
 
     fundoBackground.appendChild(campoBusca)
 
 
+    // Cria o botão de busca sobre a barra de busca
 
     let iconeBusca = document.createElement('img')
 
@@ -46,4 +34,24 @@ function buscar() {
 
     fundoBackground.appendChild(iconeBusca)
 
+
+    // Cria o ícone de fechar
+    
+    let iconeFechar = document.createElement("p")
+
+    iconeFechar.innerHTML = ("X")
+
+    iconeFechar.classList.add("iconeFechar")
+
+    fundoBackground.appendChild(iconeFechar)
+
+    // Ativa o botão de Fechar
+
+    iconeFechar.addEventListener('click', function fechar() {
+
+        main.removeChild(fundoBackground)
+
+    })
+
 }
+
