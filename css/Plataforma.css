@@ -232,3 +232,21 @@ footer{
 #menuInferior{
     color: silver;
 }
+
+.iconeBusca{
+    height : 9vh;
+    width : 9vh;
+    z-Index : 8;
+    background-Color : rgb(231,121,91);
+    padding : 3vh;
+
+    color : white;
+    position : fixed;
+    margin-Left : 9.5vw;
+
+    border-Radius : 100%;
+}
+
+.iconeBusca:hover{
+    background-color: white;
+}

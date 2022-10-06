@@ -62,6 +62,7 @@ header{
 
 .IconeNav{
     height: 2.5vh;
+    background-color: rgba(29,29,29,0);
 }
 
 #iconePerfil{

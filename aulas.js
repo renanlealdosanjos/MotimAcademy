@@ -1,4 +1,38 @@
-var balao = 1;
+function curtir() {
+
+    let botaoLike = document.getElementById("botaoLike")
+    let botaoDislike = document.getElementById("botaoDislike")
+
+    if(botaoLike.style.backgroundColor = "#292929") {
+
+        botaoLike.style.backgroundColor = "green"
+        botaoDislike.style.backgroundColor = "#292929"
+
+    } else {
+
+        botaoLike.style.backgroundColor = "#292929"
+
+    }
+
+}
+
+function descurtir() {
+
+    let botaoLike = document.getElementById("botaoLike")
+    let botaoDislike = document.getElementById("botaoDislike")
+
+    if(botaoDislike.style.backgroundColor = "#292929") {
+
+        botaoLike.style.backgroundColor = "#292929"
+        botaoDislike.style.backgroundColor = "red"
+
+    } else {
+
+        botaoLike.style.backgroundColor = "#292929"
+
+    }
+
+}
 
 function comentar() {
 
@@ -91,10 +125,6 @@ function responder() {
     
         novoBotao.style.marginLeft = '0.5vw';
         novoBotao.style.marginTop = '-2vw';
-
-        balao = balao + 1
-
-        alert(Number(balao))
 
     }
 
