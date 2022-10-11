@@ -282,10 +282,11 @@ a:hover{
 }
 
 .campoComentario{
-    width: 47vw;
+    width: 30vw;
     background-color: #292929;
     height: 7vh;
     margin-top:5vh;
+    margin-left: 4vw;
     margin-bottom: 2vw;
 
     border-radius: 30px;
@@ -305,11 +306,19 @@ a:hover{
     color: white;
 
     font-size: 1.1rem;
+
+    margin-left: 0.5vw;
 }
 
 .botaoEnviar:hover{
     background-color: white;
     color:rgb(231,121,91);
+}
+
+.divRespondida{
+    margin-top: 0vw;
+    margin-right: 0vw;
+    width: 43vw;
 }
 
 .caixaComentario{
@@ -366,10 +375,38 @@ a:hover{
 
     padding:1.5vh;
     margin-left: 3.5vw;
+    margin-bottom: 2vh;
 }
 
 .responder:hover{
     color: rgb(231,121,91);
+}
+
+.campoResposta{
+    width: 25vw;
+    background-color: #292929;
+    height: 7vh;
+    margin-left: 7.5vw;
+
+    border-radius: 30px;
+    outline: grey;
+
+    color: silver;
+    font-size: 1rem;
+    padding:1vw;
+}
+
+.novaResposta{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #404040;
+    color:silver;
+    width: 25vw;
+    margin-left: 7.5vw;
+    margin-bottom: 4vh;
+
+    padding:2.5vh;
+    border-radius: 10px;
 }
 
 footer{

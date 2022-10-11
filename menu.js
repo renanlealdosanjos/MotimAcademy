@@ -57,86 +57,94 @@ function buscar() {
 
 function notificacoes() {
 
-    // Primeiro, criamos a caixa com todas as notificações do usuário
+    if (caixaNotificacoes.style.display = "block") {
 
-    let header = document.querySelector("header")
+        caixaNotificacoes.style.display = "none"
 
-    let caixaNotificacoes = document.createElement("div")
-
-    caixaNotificacoes.classList.add("caixaNotificacoes")
-
-    header.appendChild(caixaNotificacoes)
-
-    // Agora, podemos adicionar as duas notificações
-
-
-    // Criamos a div que contém um ícone e um texto da primeira notificação
-
-    let priNotificacao = document.createElement("div")
-
-    priNotificacao.classList.add("priNotificacao")
-
-    caixaNotificacoes.appendChild(priNotificacao)
-
-
-    // Adicionamos a seta da primeira notificação
-
-    let iconeNotificacao = document.createElement("img")
-
-    iconeNotificacao.src = "./imgs/Seta Direita.svg"
-
-    iconeNotificacao.classList.add("iconeNotificacao")
-
-    priNotificacao.appendChild(iconeNotificacao)
-
+    } else {
     
-    // Adicionamos o texto da primeira notificação
-    
-    let textoNotificacao = document.createElement("a")
+        // Primeiro, criamos a caixa com todas as notificações do usuário
 
-    textoNotificacao.innerText = "O seu certificado de Introdução ao Power BI já está disponível."
+        let header = document.querySelector("header")
 
-    textoNotificacao.style.color = "silver"
-    textoNotificacao.style.textDecoration="none"
-    textoNotificacao.href="#"
+        let caixaNotificacoes = document.createElement("div")
 
-    priNotificacao.appendChild(textoNotificacao)
+        caixaNotificacoes.classList.add("caixaNotificacoes")
 
+        header.appendChild(caixaNotificacoes)
 
-    // -----------------------------------
-
-    // Cria a segunda notificação da caixa
-
-    // Primeiro, criamos a div com o ícone e o texto
-
-    let segundaNotificacao = document.createElement("div")
-
-    segundaNotificacao.classList.add("priNotificacao")
-
-    caixaNotificacoes.appendChild(segundaNotificacao)
+        // Agora, podemos adicionar as duas notificações
 
 
-    // Em seguida, criamos o ícone (a seta)
-    
-    iconeNotificacao = document.createElement("img")
-    
-    iconeNotificacao.src = "./imgs/Seta Direita.svg"
+        // Criamos a div que contém um ícone e um texto da primeira notificação
 
-    iconeNotificacao.classList.add("iconeNotificacao")
+        let priNotificacao = document.createElement("div")
+
+        priNotificacao.classList.add("priNotificacao")
+
+        caixaNotificacoes.appendChild(priNotificacao)
+
+
+        // Adicionamos a seta da primeira notificação
+
+        let iconeNotificacao = document.createElement("img")
+
+        iconeNotificacao.src = "./imgs/Seta Direita.svg"
+
+        iconeNotificacao.classList.add("iconeNotificacao")
+
+        priNotificacao.appendChild(iconeNotificacao)
+
         
-    segundaNotificacao.appendChild(iconeNotificacao)
+        // Adicionamos o texto da primeira notificação
+        
+        let textoNotificacao = document.createElement("a")
+
+        textoNotificacao.innerText = "O seu certificado de Introdução ao Power BI já está disponível."
+
+        textoNotificacao.style.color = "silver"
+        textoNotificacao.style.textDecoration="none"
+        textoNotificacao.href="#"
+
+        priNotificacao.appendChild(textoNotificacao)
 
 
-    // Para finalizar, adicionamos o texto da notificação
-    
-    let textoSegNotificacao = document.createElement("a")
+        // -----------------------------------
 
-    textoSegNotificacao.innerText = "Novo curso: Introdução ao Python já está disponível."
+        // Cria a segunda notificação da caixa
 
-    textoSegNotificacao.style.color = "silver"
-    textoSegNotificacao.style.textDecoration="none"
-    textoSegNotificacao.href="./aula1.html"
+        // Primeiro, criamos a div com o ícone e o texto
 
-    segundaNotificacao.appendChild(textoSegNotificacao)
+        let segundaNotificacao = document.createElement("div")
+
+        segundaNotificacao.classList.add("priNotificacao")
+
+        caixaNotificacoes.appendChild(segundaNotificacao)
+
+
+        // Em seguida, criamos o ícone (a seta)
+        
+        iconeNotificacao = document.createElement("img")
+        
+        iconeNotificacao.src = "./imgs/Seta Direita.svg"
+
+        iconeNotificacao.classList.add("iconeNotificacao")
+            
+        segundaNotificacao.appendChild(iconeNotificacao)
+
+
+        // Para finalizar, adicionamos o texto da notificação
+        
+        let textoSegNotificacao = document.createElement("a")
+
+        textoSegNotificacao.innerText = "Novo curso: Introdução ao Python já está disponível."
+
+        textoSegNotificacao.style.color = "silver"
+        textoSegNotificacao.style.textDecoration="none"
+        textoSegNotificacao.href="./aula1.html"
+
+        segundaNotificacao.appendChild(textoSegNotificacao)
+
+    }
 
 }

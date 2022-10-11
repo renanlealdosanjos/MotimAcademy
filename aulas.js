@@ -96,23 +96,16 @@ function comentar() {
 
 
 function responder() {
-
-    if (balao = 1) {
-
-        alert(Number(balao))        
         
         let divRespondida = document.querySelector('.caixaComentario')
 
         let campoResposta = document.createElement('input');
     
-        campoResposta.classList.add('campoComentario')
+        campoResposta.classList.add('campoResposta')
     
         divRespondida.appendChild(campoResposta);
-    
-        campoResposta.style.marginLeft = '4vw';
-        campoResposta.style.marginTop = '0vw';
-        campoResposta.style.marginRight = '0vw';
-        campoResposta.style.width = '43vw';
+
+        divRespondida.classList.add('divRespondida')
     
         // Cria o novo botão
     
@@ -123,10 +116,26 @@ function responder() {
     
         divRespondida.appendChild(novoBotao)
     
-        novoBotao.style.marginLeft = '0.5vw';
-        novoBotao.style.marginTop = '-2vw';
 
-    }
+
+        // Ativa o botão de Enviar Resposta
+
+        novoBotao.addEventListener('click', function fechar() {
+
+            let novoComentario = campoResposta.value
+
+            let caixaResposta = document.createElement('div')
+
+            caixaResposta.innerText = `Eu: ${novoComentario}`
+
+            divRespondida.removeChild(campoResposta)
+            divRespondida.removeChild(novoBotao)
+
+            caixaResposta.classList.add('novaResposta')
+
+            divRespondida.appendChild(caixaResposta)
+
+    })
 
     // Cria o novo input
 
