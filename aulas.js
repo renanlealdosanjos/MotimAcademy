@@ -38,7 +38,7 @@ function comentar() {
 
     // Criar uma nova div, que contém a foto do usuário e o texto comentado
 
-    let caixaDiv = document.querySelector('.caixaComentario');
+    let caixaDiv = document.querySelector('#secaoComents');
 
     let novaDiv = document.createElement('div');
 
@@ -97,15 +97,15 @@ function comentar() {
 
 function responder() {
         
-        let divRespondida = document.querySelector('.caixaComentario')
+        let comentarioRespondido = document.querySelector('#coment2')
 
         let campoResposta = document.createElement('input');
     
         campoResposta.classList.add('campoResposta')
     
-        divRespondida.appendChild(campoResposta);
+        comentarioRespondido.appendChild(campoResposta);
 
-        divRespondida.classList.add('divRespondida')
+        comentarioRespondido.classList.add('divRespondida')
     
         // Cria o novo botão
     
@@ -114,7 +114,7 @@ function responder() {
         novoBotao.classList.add('botaoEnviar')
         novoBotao.innerText = 'Enviar'
     
-        divRespondida.appendChild(novoBotao)
+        comentarioRespondido.appendChild(novoBotao)
     
 
 
@@ -126,14 +126,29 @@ function responder() {
 
             let caixaResposta = document.createElement('div')
 
+            let fotoPerfil = document.createElement('img')
+
+            fotoPerfil.src = './imgs/Perfil.jfif'
+
+            fotoPerfil.style.height = '7vh'
+
+            fotoPerfil.style.borderRadius = '100%'
+
+            fotoPerfil.style.marginLeft = '7.5vw'
+
             caixaResposta.innerText = `Eu: ${novoComentario}`
 
-            divRespondida.removeChild(campoResposta)
-            divRespondida.removeChild(novoBotao)
+            caixaResposta.style.marginLeft = '0.5vw'
+            caixaResposta.style.marginRight = '10vw'
+
+            comentarioRespondido.removeChild(campoResposta)
+            comentarioRespondido.removeChild(novoBotao)
 
             caixaResposta.classList.add('novaResposta')
 
-            divRespondida.appendChild(caixaResposta)
+            comentarioRespondido.appendChild(fotoPerfil)
+            
+            comentarioRespondido.appendChild(caixaResposta)
 
     })
 

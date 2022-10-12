@@ -72,13 +72,39 @@
         <input type="text" name="comentario" class="campoComentario">
         <button class="botaoEnviar" onclick="comentar()">Enviar</button>
 
-        <div class="caixaComentario">
-            <img src="./imgs/Perfil.png" class="fotoComentario">
-            <div class="comentarios">
-                <h4 id="nomeComentario">Marina Macedo:</h4>
-                <p id="textoComentario">&nbsp material muito bom!</p>
+        <div id="secaoComents">
+            <div class="caixaComentario" id="coment1" >
+                <img src="./imgs/Perfil.png" class="fotoComentario">
+                <div class="comentarios">
+                    <h4 id="nomeComentario">Marina Macedo:</h4>
+                    <p id="textoComentario">&nbsp material muito bom!</p>
+                </div>
+                <button class="responder" onclick="responder()">Responder • há 5 dias</button>
             </div>
-            <button class="responder" onclick="responder()">Responder • há 5 dias</button>
+            <div class="caixaComentario"id="coment2" >
+                <img src="./imgs/Perfil-LauraC.jpg" class="fotoComentario">
+                <div class="comentarios">
+                    <h4 id="nomeComentario">Laura Campos:</h4>
+                    <p id="textoComentario">&nbsp Adorei o conteúdo!</p>
+                </div>
+                <button class="responder" onclick="responder()">Responder • há 5 dias</button>
+            </div>
+            <div class="caixaComentario" id="coment3" >
+                <img src="./imgs/Perfil.png" class="fotoComentario">
+                <div class="comentarios">
+                    <h4 id="nomeComentario">Juca Kfura:</h4>
+                    <p id="textoComentario">&nbsp se a minha versão for diferente também funciona?</p>
+                </div>
+                <button class="responder" onclick="responder()">Responder • há 5 dias</button>
+            </div>
+            <div class="caixaComentario" id="coment4" >
+                <img src="./imgs/Perfil-FelipeR.jfif" class="fotoComentario">
+                <div class="comentarios">
+                    <h4 id="nomeComentario">Felipe Rock:</h4>
+                    <p id="textoComentario">&nbsp aqui deu certinho (depois de tentar 3 vezes) kkk</p>
+                </div>
+                <button class="responder" onclick="responder()">Responder • há 5 dias</button>
+            </div>
         </div>
     </section>
     <footer>

@@ -264,6 +264,14 @@ a:hover{
     color: grey;
 }
 
+#secaoComents{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 54vw;
+    background-color:yellow;    
+}
+
 #tituloComentarios{
     display: flex;
     align-items: center;
@@ -308,6 +316,7 @@ a:hover{
     font-size: 1.1rem;
 
     margin-left: 0.5vw;
+    margin-top: 1vh;
 }
 
 .botaoEnviar:hover{
@@ -327,6 +336,8 @@ a:hover{
     align-items: center;
     justify-content: flex-start;
     width: 55vw;
+    background-color: blue;
+    margin-bottom: 3vh;
 }
 
 .fotoComentario{
@@ -371,11 +382,10 @@ a:hover{
     border-width: 0;
     font-size: 0.9rem;
     color:silver;
-    width: 50vw;
+    width: 100%;
 
     padding:1.5vh;
     margin-left: 3.5vw;
-    margin-bottom: 2vh;
 }
 
 .responder:hover{
@@ -386,7 +396,6 @@ a:hover{
     width: 25vw;
     background-color: #292929;
     height: 7vh;
-    margin-left: 7.5vw;
 
     border-radius: 30px;
     outline: grey;
@@ -394,18 +403,23 @@ a:hover{
     color: silver;
     font-size: 1rem;
     padding:1vw;
+    margin-top: 1vh;
+    margin-left: 7.5vw;
 }
 
 .novaResposta{
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     background-color: #404040;
     color:silver;
     width: 25vw;
+    height: 7vh;
+    padding-left: 2.5vh;
     margin-left: 7.5vw;
-    margin-bottom: 4vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
 
-    padding:2.5vh;
     border-radius: 10px;
 }
 
