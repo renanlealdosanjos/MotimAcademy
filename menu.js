@@ -57,12 +57,6 @@ function buscar() {
 
 function notificacoes() {
 
-    if (caixaNotificacoes.style.display = "block") {
-
-        caixaNotificacoes.style.display = "none"
-
-    } else {
-    
         // Primeiro, criamos a caixa com todas as notificações do usuário
 
         let header = document.querySelector("header")
@@ -80,7 +74,7 @@ function notificacoes() {
 
         let priNotificacao = document.createElement("div")
 
-        priNotificacao.classList.add("priNotificacao")
+        priNotificacao.classList.add("notificacoes")
 
         caixaNotificacoes.appendChild(priNotificacao)
 
@@ -117,7 +111,7 @@ function notificacoes() {
 
         let segundaNotificacao = document.createElement("div")
 
-        segundaNotificacao.classList.add("priNotificacao")
+        segundaNotificacao.classList.add("notificacoes")
 
         caixaNotificacoes.appendChild(segundaNotificacao)
 
@@ -145,6 +139,22 @@ function notificacoes() {
 
         segundaNotificacao.appendChild(textoSegNotificacao)
 
-    }
+
+        let botaoNotificacoes = document.querySelector("#iconeNotificacoes")
+
+        botaoNotificacoes.addEventListener('click', function fechar() {
+
+            alert("botao funcionando")
+
+                textoSegNotificacao.innerText = ""
+
+            //esse alerta está repetindo a quantidade de vezes que foi usado (primeiro 1 alerta, depois 2 alertas, depois 3,...)
+
+            //Queria remover a caixaNotificações. Desse jeito aqui de baixo funcionou quando eu botei o addEvent no body
+            // caixaNotificacoes.removeChild(segundaNotificacao)
+            // caixaNotificacoes.removeChild(priNotificacao)
+            // header.removeChild(caixaNotificacoes)
+
+        })
 
 }

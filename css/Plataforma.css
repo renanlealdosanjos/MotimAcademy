@@ -327,7 +327,7 @@ footer{
     border-radius: 10px;
 }
 
-.priNotificacao{
+.notificacoes{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;

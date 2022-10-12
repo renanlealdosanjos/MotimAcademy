@@ -290,11 +290,11 @@ a:hover{
 }
 
 .campoComentario{
-    width: 30vw;
-    background-color: #292929;
+    width: 46vw;
+    background-color: orange;
     height: 7vh;
     margin-top:5vh;
-    margin-left: 4vw;
+    
     margin-bottom: 2vw;
 
     border-radius: 30px;

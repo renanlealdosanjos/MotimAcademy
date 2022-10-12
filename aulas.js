@@ -3,14 +3,14 @@ function curtir() {
     let botaoLike = document.getElementById("botaoLike")
     let botaoDislike = document.getElementById("botaoDislike")
 
-    if(botaoLike.style.backgroundColor = "#292929") {
+    if(botaoLike.style.backgroundColor === "green") {
 
-        botaoLike.style.backgroundColor = "green"
-        botaoDislike.style.backgroundColor = "#292929"
+        botaoLike.style.backgroundColor = "#292929"
 
     } else {
 
-        botaoLike.style.backgroundColor = "#292929"
+        botaoLike.style.backgroundColor = "green"
+        botaoDislike.style.backgroundColor = "#292929"
 
     }
 
@@ -21,14 +21,14 @@ function descurtir() {
     let botaoLike = document.getElementById("botaoLike")
     let botaoDislike = document.getElementById("botaoDislike")
 
-    if(botaoDislike.style.backgroundColor = "#292929") {
+    if(botaoDislike.style.backgroundColor === "red") {
 
-        botaoLike.style.backgroundColor = "#292929"
-        botaoDislike.style.backgroundColor = "red"
+        botaoDislike.style.backgroundColor = "#292929"
 
     } else {
 
         botaoLike.style.backgroundColor = "#292929"
+        botaoDislike.style.backgroundColor = "red"
 
     }
 
@@ -130,9 +130,7 @@ function responder() {
 
             fotoPerfil.src = './imgs/Perfil.jfif'
 
-            fotoPerfil.style.height = '7vh'
-
-            fotoPerfil.style.borderRadius = '100%'
+            fotoPerfil.classList.add('fotoComentario')
 
             fotoPerfil.style.marginLeft = '7.5vw'
 
