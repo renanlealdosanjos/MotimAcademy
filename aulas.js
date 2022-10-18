@@ -66,7 +66,7 @@ function comentar() {
 
     novoTexto.classList.add('comentarios');
 
-    novoTexto.innerHTML = ("Eu: " + novoComentario.value);
+    novoTexto.innerHTML = ("Me: " + novoComentario.value);
     
     novoComentario.value = ('');
 
@@ -82,7 +82,7 @@ function comentar() {
     botaoResponder.classList.add('responder')
     botaoResponder.href='#'
 
-    botaoResponder.innerHTML = ('Responder • Comentado agora');
+    botaoResponder.innerHTML = ('Reply • Just now');
 
     novaDiv.appendChild(botaoResponder);
 
@@ -112,7 +112,7 @@ function responder() {
         let novoBotao = document.createElement('button')
     
         novoBotao.classList.add('botaoEnviar')
-        novoBotao.innerText = 'Enviar'
+        novoBotao.innerText = 'Send'
     
         comentarioRespondido.appendChild(novoBotao)
     
@@ -149,7 +149,5 @@ function responder() {
             comentarioRespondido.appendChild(caixaResposta)
 
     })
-
-    // Cria o novo input
 
 }

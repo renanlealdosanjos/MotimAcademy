@@ -291,18 +291,18 @@ a:hover{
 
 .campoComentario{
     width: 46vw;
-    background-color: orange;
     height: 7vh;
+
     margin-top:5vh;
-    
     margin-bottom: 2vw;
+    padding: 1vw;
 
     border-radius: 30px;
     outline: grey;
 
     color: silver;
+    background-color: #404040;
     font-size: 1rem;
-    padding:1vw;
 }
 
 .botaoEnviar{
@@ -458,6 +458,7 @@ footer{
     width: 30vw;
 }
 
-#menuInferior{
+.menuInferior{
     color: silver;
+    text-decoration: none;
 }
