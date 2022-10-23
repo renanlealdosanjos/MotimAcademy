@@ -63,3 +63,40 @@ function recuperar(){
         }
     }
 }
+
+function selectCountry(){
+    
+    let selectedCountry = document.getElementById("country")
+    let countryList = document.createElement("div")
+    let selectBrazil = document.createElement("div")
+    let selectUSA = document.createElement("div")
+
+    selectUSA.classList.add('selectUSA')
+    selectBrazil.classList.add('selectBrazil')
+
+    let brazilIcon = document.createElement('img')
+    let usaIcon = document.createElement("img")
+
+    brazilIcon.src = "./imgs/Bandeira.webp"
+    usaIcon.src = "./imgs/iconUSA.png"
+
+    brazilIcon.classList.add("flag")
+    usaIcon.classList.add("flag")
+
+    let brazilCode = document.createElement("p")
+    let usaCode = document.createElement("p")
+
+    brazilCode.innerHTML = "+55"
+    usaCode.innerHTML = "+39"
+
+    selectedCountry.appendChild(countryList)
+    countryList.appendChild(selectBrazil)
+    countryList.appendChild(selectUSA)
+
+    selectBrazil.appendChild(brazilIcon)
+    selectUSA.appendChild(usaIcon)
+
+    selectBrazil.appendChild(brazilCode)
+    selectUSA.appendChild(usaCode)
+
+}

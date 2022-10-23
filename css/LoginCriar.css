@@ -19,7 +19,7 @@ main{
     justify-content: center;
     align-content:flex-end;
 
-    background-image: url("../imgs/LoginBackground.png");
+    background-image: url(../imgs/LoginBackground.png);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,9 +155,9 @@ main{
     margin-bottom: 4vh;
 }
 
-#Pais{
+#country{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     height: 6.5vh;
@@ -171,14 +171,16 @@ main{
     font-size: 0.8rem;
 }
 
-#Bandeira{
+#country:hover{
+    background-color: grey;
+}
+
+.flag{
     height: 2vh;
-    padding-right: 0.4vw;
 }
 
 #Seta{
     height: 0.5vh;
-    padding-left: 0.4vw;
 }
 
 #Telefone{
@@ -227,4 +229,42 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
+}
+
+.selectBrazil{
+    position: absolute;
+    background-color: rgb(56,57,59);
+    height: 42px;
+    width: 78px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 68.9vh;
+    left: 58.7vw;
+    border-radius: 20px 0px 0px;
+    padding-left: 0.5vw;
+    padding-right: 0.8vw;
+}
+
+.selectBrazil:hover{
+    background-color: grey;
+}
+
+.selectUSA{
+    position: absolute;
+    background-color: rgb(56,57,59);
+    height: 42px;
+    width: 78px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 75.2vh;
+    left: 58.7vw;
+    border-radius: 0px 0px 20px 20px;
+    padding-left: 0.5vw;
+    padding-right: 0.8vw;
+}
+
+.selectUSA:hover{
+    background-color: grey;
 }
